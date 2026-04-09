@@ -35,7 +35,16 @@ function App() {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="text-2xl tracking-tight">BusinessName</div>
+          <div className="flex items-center gap-3">
+            <img
+              src="/logo.png"
+              alt="Ascend Realty Systems logo"
+              className="w-8 h-8 object-contain"
+            />
+            <div className="text-2xl tracking-tight">
+              Ascend Realty Systems
+            </div>
+          </div>
           <Button onClick={() => scrollToSection('booking')} size="sm">
             Book Free Audit
             <ArrowRight className="w-4 h-4 ml-2" />
@@ -338,7 +347,7 @@ function App() {
           <div className="grid md:grid-cols-12 gap-12 mb-12">
             {/* Brand - Takes up more space */}
             <div className="md:col-span-4">
-              <div className="text-2xl text-white mb-4 tracking-tight">BusinessName</div>
+              <div className="text-2xl text-white mb-4 tracking-tight">Ascend Realty Systems</div>
               <p className="text-sm text-gray-400 mb-6 leading-relaxed">
                 Systems-Driven Growth Partner
               </p>
@@ -417,8 +426,8 @@ function App() {
               <ul className="space-y-3 text-sm">
                 <li className="flex items-start gap-2">
                   <Mail className="w-4 h-4 shrink-0 mt-0.5" />
-                  <a href="mailto:hello@businessname.com.au" className="hover:text-white transition-colors">
-                    hello@businessname.com.au
+                  <a href="mailto:" className="hover:text-white transition-colors">
+                    ascendrealtysystems@gmail.com
                   </a>
                 </li>
                 <li className="flex items-start gap-2">
@@ -492,7 +501,7 @@ function App() {
 
           {/* Bottom Bar */}
           <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
-            <p>© 2026 BusinessName. All rights reserved.</p>
+            <p>© 2026 Ascend Realty Systems . All rights reserved.</p>
             <div className="flex gap-6">
               <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
               <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
