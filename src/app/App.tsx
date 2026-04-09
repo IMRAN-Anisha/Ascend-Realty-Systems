@@ -6,6 +6,7 @@ import { ToolsIntegration } from './components/ToolsIntegration';
 import { AnimatedAudience } from './components/AnimatedAudience';
 import { ProductsSection } from './components/ProductsSection';
 import { ImageWithFallback } from './components/figma/ImageWithFallback';
+import Booking from "@/components/Booking";
 import { Button } from './components/ui/button';
 import { Card } from './components/ui/card';
 import { 
@@ -259,85 +260,8 @@ function App() {
       {/* Tools Integration Section */}
       <ToolsIntegration />
 
-      {/* Booking Section */}
-      <section id="booking" className="py-20 px-6 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white">
-        <div className="max-w-5xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-4xl md:text-6xl mb-6 tracking-tight">
-              Ready to Stop Losing Deals?
-            </h2>
-            <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-              Book a free 20-minute audit call. We'll analyze your lead flow and show you exactly where deals are slipping away.
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
-          >
-            <Card className="p-8 md:p-12 bg-white/95 backdrop-blur">
-              <div className="text-center">
-                <Calendar className="w-16 h-16 text-blue-600 mx-auto mb-6" />
-                <h3 className="text-3xl mb-4 text-gray-900">Book Your Free Audit Call</h3>
-                <p className="text-gray-600 mb-8 text-lg">
-                  We'll walk through your current process and identify quick wins
-                </p>
-
-                {/* Calendly Placeholder */}
-                <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-12 border-2 border-dashed border-gray-300">
-                  <p className="text-gray-500 mb-4">
-                    📅 Calendly booking widget will be embedded here
-                  </p>
-                  <p className="text-sm text-gray-400 mb-6">
-                    (Integration placeholder - add your Calendly embed code)
-                  </p>
-                  <Button size="lg" className="mx-auto">
-                    Schedule Your Audit Call
-                    <ArrowRight className="w-5 h-5 ml-2" />
-                  </Button>
-                </div>
-
-                <div className="mt-8 grid md:grid-cols-3 gap-6 text-left">
-                  <div className="flex items-start gap-3">
-                    <div className="p-2 bg-blue-100 rounded-lg shrink-0">
-                      <Clock className="w-5 h-5 text-blue-600" />
-                    </div>
-                    <div>
-                      <div className="text-sm text-gray-900 mb-1">Duration</div>
-                      <div className="text-sm text-gray-600">20 minutes</div>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="p-2 bg-green-100 rounded-lg shrink-0">
-                      <Calendar className="w-5 h-5 text-green-600" />
-                    </div>
-                    <div>
-                      <div className="text-sm text-gray-900 mb-1">No Obligation</div>
-                      <div className="text-sm text-gray-600">Free consultation</div>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="p-2 bg-purple-100 rounded-lg shrink-0">
-                      <TrendingDown className="w-5 h-5 text-purple-600" />
-                    </div>
-                    <div>
-                      <div className="text-sm text-gray-900 mb-1">Outcome</div>
-                      <div className="text-sm text-gray-600">Actionable insights</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Card>
-          </motion.div>
-        </div>
-      </section>
+      {/* Calendly Booking Section */}
+      <Booking />
 
       {/* FAQ Section */}
       <FAQSection />
