@@ -6,7 +6,7 @@ import { ToolsIntegration } from './components/ToolsIntegration';
 import { AnimatedAudience } from './components/AnimatedAudience';
 import { ProductsSection } from './components/ProductsSection';
 import { ImageWithFallback } from './components/figma/ImageWithFallback';
-import Booking from "@/components/Booking";
+import Booking from "./components/Booking";
 import { Button } from './components/ui/button';
 import { Card } from './components/ui/card';
 import { 
