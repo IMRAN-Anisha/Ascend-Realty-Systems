@@ -25,6 +25,7 @@ import {
 import { motion } from 'motion/react';
 
 function App() {
+  const baseUrl = import.meta.env.BASE_URL;
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     element?.scrollIntoView({ behavior: 'smooth' });
@@ -37,7 +38,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <img
-              src="/logo.png"
+              src={`${baseUrl}logo.png`}
               alt="Ascend Realty Systems logo"
               className="w-8 h-8 object-contain"
             />
